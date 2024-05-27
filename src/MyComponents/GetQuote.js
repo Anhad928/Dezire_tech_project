@@ -28,7 +28,7 @@ const GetQuote = () => {
     },
   });
 
-  return (
+  return ( 
     <section id="get-quote" className="get-quote">
       <div className="highlight-box">
         <h2>Get a Quote</h2>

@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <div className="about-us">
         <div className="home-button-container">
-        <Link to="/" className="home-button">Return to Home</Link>
+        <Link to="/" className="home-button">Home</Link>
       </div>
       <div className="breadcrumb">
       </div>

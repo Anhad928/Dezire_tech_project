@@ -8,7 +8,7 @@ const ContactUs = () => {
   return (
     <div className="contact-us">
       <div className="contact-item">
-          <Link to="/" className="home-button">Return to Home</Link>
+          <Link to="/" className="home-button">Home </Link>
         </div>
       <div className="contact-details">
         <h1>Connect With Us</h1>
