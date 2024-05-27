@@ -1,0 +1,135 @@
+/* src/MyComponents/OurServices.css */
+
+.our-services {
+  padding: 30px 20px; /* Add padding for better spacing */
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensure the container takes the full width */
+}
+
+.highlight-box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px; /* Increase padding for more content space */
+  min-height: 600px; /* Set a larger minimum height to ensure the box is taller */
+  width: 100vw; /* Ensure the box takes up the full width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 20px; /* Add margin to ensure some spacing from the edges */
+}
+
+.our-services h2 {
+  font-size: 46px;
+  margin-bottom: 40px;
+  text-align: center; /* Center align heading */
+  font-weight: bold;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 200px; /* Increased padding for desktop */
+  width: calc(50% - 10px); /* Adjust width to ensure proper spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-number {
+  background-color: #6a4bff; /* Purple color */
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 20px;
+  color: #303030;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 8000px) {
+  .highlight-box {
+    padding: 100px; /* Reduce padding for smaller screens */
+    min-height: auto; /* Adjust min-height for smaller screens */
+    margin: 0 5px; /* Ensure spacing on smaller screens */
+  }
+
+  .our-services h2 {
+    font-size: 32px; /* Reduce font size for smaller screens */
+  }
+
+  .service-list {
+    flex-direction: column; /* Stack items vertically on small screens */
+    gap: 10px; /* Reduce gap between items */
+  }
+
+  .service-item {
+    width: 100%; /* Full width for each item */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .service-number {
+    font-size: 18px; /* Reduce font size */
+    height: 30px; /* Adjust height */
+    width: 30px; /* Adjust width */
+  }
+
+  .service-item h3 {
+    font-size: 28px; /* Reduce font size */
+  }
+
+  .service-item p {
+    font-size: 16px; /* Reduce font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight-box {
+    padding: 10px; /* Reduce padding for extra small screens */
+  }
+
+  .our-services h2 {
+    font-size: 24px; /* Further reduce font size */
+    text-align: center; /* Center-align heading */
+  }
+
+  .service-item {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content */
+  }
+
+  .service-number {
+    margin: 0 0 10px 0; /* Adjust margin */
+  }
+
+  .service-item h3 {
+    font-size: 18px; /* Further reduce font size */
+    text-align: center; /* Center-align text */
+  }
+
+  .service-item p {
+    font-size: 14px; /* Further reduce font size */
+    text-align: center; /* Center-align text */
+  }
+}

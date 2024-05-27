@@ -1,0 +1,145 @@
+/* src/MyComponents/Header.css */
+
+.header {
+  background: #f5f5f5;
+  padding: 20px;
+  text-align: left;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column; /* Use column direction for better stacking */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Ensure content is centered within a max width */
+}
+
+.header-text {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: column; /* Ensure buttons stack vertically on small screens */
+  gap: 10px;
+  justify-content: center;
+  align-items: center; /* Center align buttons */
+}
+
+.quote-button,
+.learn-more-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.quote-button {
+  background-color: #6a4bff; /* Purple color */
+  color: white;
+}
+
+.learn-more-button {
+  background-color: white;
+  color: #6a4bff; /* Purple color */
+  border: 2px solid #6a4bff;
+}
+
+.header-image {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px; /* Add spacing between text and image */
+  margin-left: auto; /* Ensure the image moves to the right */
+  padding-left: 10%; /* Add padding-left to move the image to the right */
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .header {
+    height: 400px; /* Set a fixed height for larger screens */
+    flex-direction: row;
+    justify-content: first baseline;
+    padding: 10px;
+  }
+
+  .header-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-text {
+    max-width: 50%;
+    text-align: left;
+    margin-left: -13%; /* Adjust left margin for better spacing */
+    margin-right: 13%;
+  }
+
+  .header-title {
+    font-size: 48px;
+    margin-left: 0;
+  }
+
+  .header-subtitle {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .header-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 0%; /* Adjust left margin for better spacing */
+  }
+
+  .quote-button,
+  .learn-more-button {
+    width: auto;
+    margin: 0;
+  }
+
+  .header-image {
+    justify-content: flex-end;
+    padding-right: 4%;
+    margin-top: 0; /* Remove top margin on larger screens */
+    margin-left: auto; /* Ensure the image moves to the right */
+    margin-right: 0px;
+    padding-left: 10%; /* Add padding-left to move the image to the right */
+  }
+
+  .header-image img {
+    max-width: 100%; /* Ensure the image maintains its size */
+    height: auto;
+    border-radius: 10px;
+  }
+}

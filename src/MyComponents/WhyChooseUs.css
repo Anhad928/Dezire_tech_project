@@ -1,0 +1,126 @@
+/* src/MyComponents/WhyChooseUs.css */
+
+.why-choose-us {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensure the container takes the full width */
+}
+
+.highlight-box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 1200px; /* Limit the maximum width for better readability */
+  width: 100%; /* Ensure the box takes up the full width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 20px; /* Add margin to ensure some spacing from the edges */
+}
+
+.why-choose-us h2 {
+  font-size: 38px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.reasons-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reason-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reason-icon {
+  background-color: #6a4bff; /* Purple color */
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.reason-item h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.reason-item p {
+  font-size: 18px;
+  color: #272727;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .highlight-box {
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin: 0 10px; /* Ensure spacing on smaller screens */
+  }
+
+  .why-choose-us h2 {
+    font-size: 32px; /* Reduce font size for smaller screens */
+  }
+
+  .reason-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reason-icon {
+    margin-bottom: 10px;
+  }
+
+  .reason-item h3 {
+    font-size: 22px; /* Reduce font size for smaller screens */
+  }
+
+  .reason-item p {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight-box {
+    padding: 10px; /* Reduce padding for extra small screens */
+    margin: 0 5px; /* Ensure spacing on extra small screens */
+  }
+
+  .why-choose-us h2 {
+    font-size: 28px; /* Further reduce font size */
+    text-align: center; /* Center-align heading */
+  }
+
+  .reason-item {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content */
+  }
+
+  .reason-icon {
+    margin: 0 0 10px 0; /* Adjust margin */
+  }
+
+  .reason-item h3 {
+    font-size: 20px; /* Further reduce font size */
+    text-align: center; /* Center-align text */
+  }
+
+  .reason-item p {
+    font-size: 14px; /* Further reduce font size */
+    text-align: center; /* Center-align text */
+  }
+}
